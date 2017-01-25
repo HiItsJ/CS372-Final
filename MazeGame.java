@@ -253,6 +253,9 @@ public class MazeGame extends JComponent implements MouseMotionListener, MouseLi
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setResizable(false);
     frame.setVisible(true);
+    frame.setLocationRelativeTo(null);
+
+    JOptionPane.showMessageDialog(frame, "Click the hero to move him. Click again to stop moving him.\nAvoid the walls and the spikes!\nReach the flag to win!");
 
   }
 }
